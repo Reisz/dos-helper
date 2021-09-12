@@ -1,0 +1,33 @@
+{
+    "categories": [
+        {
+            "name": "Potions",
+            "range": [
+                0,
+                1
+            ]
+        }
+    ],
+    "items": [
+        {
+            "name": "Minor Healing Potion",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/minor_healing_potion.jpg",
+            "recipes": [
+                {
+                    "ingredients": [
+                        1,
+                        2
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Empty Potion Bottle",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Potion_Empty.png"
+        },
+        {
+            "name": "Penny Bun Mushroom",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Food_Penny_Bun_Mushroom_small.png"
+        }
+    ]
+}

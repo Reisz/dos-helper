@@ -1,0 +1,9 @@
+[package]
+name = "dos-helper"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+seed = "0.8"
+serde = "1.0"
+smallvec = { version = "1.6", features = ["serde", "union"] }
