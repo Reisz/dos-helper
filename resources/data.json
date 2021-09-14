@@ -4,7 +4,7 @@
             "name": "Potions",
             "range": [
                 0,
-                1
+                7
             ]
         }
     ],
@@ -15,8 +15,104 @@
             "recipes": [
                 {
                     "ingredients": [
+                        6,
+                        8
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Medium Healing Potion",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/medium_healing_potion.jpg",
+            "recipes": [
+                {
+                    "ingredients": [
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "ingredients": [
+                        0,
+                        9
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Healing Potion",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/largeHealing.png",
+            "recipes": [
+                {
+                    "ingredients": [
                         1,
+                        1
+                    ]
+                },
+                {
+                    "ingredients": [
+                        1,
+                        9
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Huge Healing Potion",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hugeHealing.png",
+            "recipes": [
+                {
+                    "ingredients": [
+                        2,
                         2
+                    ]
+                },
+                {
+                    "ingredients": [
+                        2,
+                        10
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Giant Healing Potion",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Huge_Healing_Potion_MK2.PNG",
+            "recipes": [
+                {
+                    "ingredients": [
+                        3,
+                        3
+                    ]
+                },
+                {
+                    "ingredients": [
+                        3,
+                        11
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Healing Elixir",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/healing_elixir.jpg",
+            "recipes": [
+                {
+                    "ingredients": [
+                        7,
+                        12
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Physical Armour Potion",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/minorPhysical.png",
+            "recipes": [
+                {
+                    "ingredients": [
+                        7,
+                        13
                     ]
                 }
             ]
@@ -28,6 +124,26 @@
         {
             "name": "Penny Bun Mushroom",
             "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Food_Penny_Bun_Mushroom_small.png"
+        },
+        {
+            "name": "Augmentor",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/augmentorLow.png"
+        },
+        {
+            "name": "High Quality Augmentor",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/augmentorMedium.png"
+        },
+        {
+            "name": "Ultimate Augmentor Herb",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/augmentorUltimate.png"
+        },
+        {
+            "name": "Yarrow Flower",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Yarrow_Flower.PNG"
+        },
+        {
+            "name": "Amadouvier",
+            "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Amadouvier.PNG"
         }
     ]
 }
