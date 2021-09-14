@@ -10,35 +10,37 @@ fn view_item(item: &Item) -> Vec<Node<Msg>> {
 }
 
 fn view_recipe(crafting: &Crafting, recipe: &Recipe) -> Node<Msg> {
-    td![table![tr![crafting
-        .recipe_items(recipe)
-        .map(|item| td![view_item(item)])]]]
+    div![
+        C!["box", "recipe-box"],
+        crafting.recipe_items(recipe).map(view_item)
+    ]
 }
 
 fn view_main_item(crafting: &Crafting, item: &Item) -> Node<Msg> {
     println!("{}", item.name());
-    tr![
-        td![view_item(item)],
+    div![
+        C!["recipe-container"],
+        div![C!["box", "recipe-box"], view_item(item)],
         item.recipes()
             .iter()
             .map(|recipe| view_recipe(crafting, recipe))
     ]
 }
 
-fn view_category(crafting: &Crafting, category: &Category) -> Vec<Node<Msg>> {
-    let mut result = vec![tr![td![h2![category.name()]]]];
-    result.extend(
+fn view_category(crafting: &Crafting, category: &Category) -> Node<Msg> {
+    section![
+        h1![C!["title"], category.name()],
         crafting
             .items(category)
             .iter()
-            .map(|item| view_main_item(crafting, item)),
-    );
-    result
+            .map(|item| view_main_item(crafting, item))
+    ]
 }
 
-pub fn view(crafting: &Crafting) -> Node<Msg> {
-    table![crafting
+pub fn view(crafting: &Crafting) -> Vec<Node<Msg>> {
+    crafting
         .categories()
         .iter()
-        .map(|category| view_category(crafting, category))]
+        .map(|category| view_category(crafting, category))
+        .collect()
 }
