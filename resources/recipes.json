@@ -1,0 +1,112 @@
+[
+    {
+        "input": [
+            "Empty Potion Bottle",
+            "Penny Bun Mushroom"
+        ],
+        "output": [
+            "Minor Healing Potion"
+        ]
+    },
+    {
+        "input": [
+            "Minor Healing Potion",
+            "Minor Healing Potion"
+        ],
+        "output": [
+            "Medium Healing Potion"
+        ]
+    },
+    {
+        "input": [
+            "Minor Healing Potion",
+            [
+                "Augmentor",
+                "High Quality Augmentor",
+                "Ultimate Augmentor Herb"
+            ]
+        ],
+        "output": [
+            "Medium Healing Potion"
+        ]
+    },
+    {
+        "input": [
+            "Medium Healing Potion",
+            "Medium Healing Potion"
+        ],
+        "output": [
+            "Healing Potion"
+        ]
+    },
+    {
+        "input": [
+            "Medium Healing Potion",
+            [
+                "Augmentor",
+                "High Quality Augmentor",
+                "Ultimate Augmentor Herb"
+            ]
+        ],
+        "output": [
+            "Healing Potion"
+        ]
+    },
+    {
+        "input": [
+            "Healing Potion",
+            "Healing Potion"
+        ],
+        "output": [
+            "Huge Healing Potion"
+        ]
+    },
+    {
+        "input": [
+            "Healing Potion",
+            [
+                "High Quality Augmentor",
+                "Ultimate Augmentor Herb"
+            ]
+        ],
+        "output": [
+            "Giant Healing Potion"
+        ]
+    },
+    {
+        "input": [
+            "Huge Healing Potion",
+            "Huge Healing Potion"
+        ],
+        "output": [
+            "Huge Healing Potion"
+        ]
+    },
+    {
+        "input": [
+            "Huge Healing Potion",
+            "Ultimate Augmentor Herb"
+        ],
+        "output": [
+            "Giant Healing Potion"
+        ]
+    },
+    {
+        "input": [
+            "Empty Potion Bottle",
+            "Yarrow Flower"
+        ],
+        "output": [
+            "Healing Elixir"
+        ]
+    },
+    {
+        "input": [
+            "Empty Potion Bottle",
+            "Amadouvier"
+        ],
+        "output": [
+            "Physical Armour Potion"
+        ]
+    }
+]

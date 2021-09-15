@@ -1,8 +1,7 @@
-pub mod crafting;
-
 use seed::prelude::*;
 
-use crafting::Crafting;
+use data::crafting::Crafting;
+use lzma_rs::xz_decompress;
 
 #[derive(Debug, Default)]
 pub struct Model {
@@ -20,7 +19,7 @@ pub enum Msg {
 }
 
 pub fn init(_: Url, orders: &mut impl Orders<Msg>) -> Model {
-    orders.perform_cmd(async { Msg::DataLoaded(load_data().await) });
+    orders.perform_cmd(load_data());
     Model::default()
 }
 
@@ -33,8 +32,12 @@ pub fn update(msg: Msg, model: &mut Model, _: &mut impl Orders<Msg>) {
     }
 }
 
-async fn load_data() -> Crafting {
-    let request = Request::new("data.json").cache(web_sys::RequestCache::NoCache);
+async fn load_data() -> Msg {
+    let request = Request::new("data.bin.xz").cache(web_sys::RequestCache::NoCache);
     let response = request.fetch().await.unwrap();
-    response.json().await.unwrap()
+    let bytes = response.bytes().await.unwrap();
+
+    let mut decompressed = Vec::new();
+    xz_decompress(&mut bytes.as_slice(), &mut decompressed).unwrap();
+    Msg::DataLoaded(bincode::deserialize(&decompressed).unwrap())
 }
