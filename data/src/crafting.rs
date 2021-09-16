@@ -212,3 +212,42 @@ mod refs {
         }
     }
 }
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn add_category() {
+        let mut crafting = Crafting::new();
+        crafting.add_category("Test Category".to_owned());
+        let mut categories = crafting.categories();
+
+        assert_eq!(categories.next().unwrap().name(), "Test Category");
+        assert!(categories.next().is_none());
+    }
+
+    #[test]
+    #[should_panic]
+    fn add_item_without_category() {
+        let mut crafting = Crafting::new();
+        crafting.add_item(Item::new("Test".to_owned(), "Url".to_owned()));
+    }
+
+    #[test]
+    fn add_item() {
+        let mut crafting = Crafting::new();
+        crafting.add_category("Test Category".to_owned());
+        crafting.add_item(Item::new("Test".to_owned(), "Url".to_owned()));
+
+        let mut categories = crafting.categories();
+        let category = categories.next().unwrap();
+        let mut items = category.items();
+        let item = items.next().unwrap();
+
+        assert_eq!(item.name(), "Test");
+        assert_eq!(item.image_url(), "Url");
+        assert!(categories.next().is_none());
+        assert!(items.next().is_none());
+    }
+}
