@@ -2,13 +2,13 @@ use seed::{prelude::*, *};
 
 use crate::model::Msg;
 
-use data::crafting::{Category, Crafting, Item};
+use data::crafting::{CategoryRef, Crafting, ItemRef};
 
-fn view_item(item: &Item) -> Vec<Node<Msg>> {
-    vec![img![attrs![At::Src => item.image_url()]], div![item.name()]]
+fn view_item(item: ItemRef) -> Node<Msg> {
+    img![attrs![At::Src => item.image_url()]]
 }
 
-fn view_main_item(item: &Item) -> Node<Msg> {
+fn view_main_item(item: ItemRef) -> Node<Msg> {
     println!("{}", item.name());
     div![
         C!["recipe-container"],
@@ -16,17 +16,16 @@ fn view_main_item(item: &Item) -> Node<Msg> {
     ]
 }
 
-fn view_category(crafting: &Crafting, category: &Category) -> Node<Msg> {
+fn view_category(category: CategoryRef) -> Node<Msg> {
     section![
         h1![C!["title"], category.name()],
-        crafting.items(category).iter().map(view_main_item)
+        category.items().map(view_main_item)
     ]
 }
 
 pub fn view(crafting: &Crafting) -> Vec<Node<Msg>> {
     crafting
         .categories()
-        .iter()
-        .map(|category| view_category(crafting, category))
+        .map(|category| view_category(category))
         .collect()
 }

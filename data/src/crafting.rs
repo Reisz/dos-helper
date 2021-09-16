@@ -3,6 +3,8 @@ use std::ops::Range;
 use serde::{Deserialize, Serialize};
 use smallvec::SmallVec;
 
+pub use refs::*;
+
 #[derive(Debug, Deserialize, Serialize)]
 pub enum Ingredient {
     Unique(usize),
@@ -54,14 +56,6 @@ impl Item {
             usage: SmallVec::new(),
         }
     }
-
-    pub fn name(&self) -> &str {
-        &self.name
-    }
-
-    pub fn image_url(&self) -> &str {
-        &self.image_url
-    }
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -77,10 +71,6 @@ impl Category {
             range: start..start,
         }
     }
-
-    pub fn name(&self) -> &str {
-        &self.name
-    }
 }
 
 #[derive(Debug, Default, Deserialize, Serialize)]
@@ -91,12 +81,10 @@ pub struct Crafting {
 }
 
 impl Crafting {
-    pub fn categories(&self) -> &[Category] {
-        &self.categories
-    }
-
-    pub fn items(&self, category: &Category) -> &[Item] {
-        &self.items[category.range.clone()]
+    pub fn categories(&self) -> impl Iterator<Item = CategoryRef> {
+        self.categories
+            .iter()
+            .map(move |category| CategoryRef::new(category, self))
     }
 
     pub fn add_category(&mut self, name: String) {
@@ -123,5 +111,96 @@ impl Crafting {
         }
 
         self.recipes.push(recipe);
+    }
+}
+
+///  Reference wrappers allow for an ergonomic reading API despite index-based storage.
+mod refs {
+    use super::*;
+
+    #[derive(Debug, Clone, Copy)]
+    pub struct RecipeRef<'a> {
+        recipe: &'a Recipe,
+        crafting: &'a Crafting,
+    }
+
+    impl<'a> RecipeRef<'a> {
+        fn new(recipe: &'a Recipe, crafting: &'a Crafting) -> Self {
+            Self { recipe, crafting }
+        }
+
+        pub fn input(&self) -> impl Iterator<Item = impl Iterator<Item = ItemRef>> {
+            self.recipe.input.iter().map(move |ingredient| {
+                ingredient
+                    .into_iter()
+                    .map(move |item| ItemRef::new(&self.crafting.items[item], self.crafting))
+            })
+        }
+
+        pub fn output(&self) -> impl Iterator<Item = ItemRef> {
+            self.recipe
+                .output
+                .iter()
+                .cloned()
+                .map(move |item| ItemRef::new(&self.crafting.items[item], self.crafting))
+        }
+    }
+
+    #[derive(Debug, Clone, Copy)]
+    pub struct ItemRef<'a> {
+        item: &'a Item,
+        crafting: &'a Crafting,
+    }
+
+    impl<'a> ItemRef<'a> {
+        fn new(item: &'a Item, crafting: &'a Crafting) -> Self {
+            Self { item, crafting }
+        }
+
+        pub fn name(&self) -> &str {
+            &self.item.name
+        }
+
+        pub fn image_url(&self) -> &str {
+            &self.item.image_url
+        }
+
+        pub fn recipes(&self) -> impl Iterator<Item = RecipeRef> {
+            self.item
+                .recipes
+                .iter()
+                .cloned()
+                .map(move |recipe| RecipeRef::new(&self.crafting.recipes[recipe], self.crafting))
+        }
+
+        pub fn usage(&self) -> impl Iterator<Item = RecipeRef> {
+            self.item
+                .usage
+                .iter()
+                .cloned()
+                .map(move |recipe| RecipeRef::new(&self.crafting.recipes[recipe], self.crafting))
+        }
+    }
+
+    #[derive(Debug, Clone, Copy)]
+    pub struct CategoryRef<'a> {
+        category: &'a Category,
+        crafting: &'a Crafting,
+    }
+
+    impl<'a> CategoryRef<'a> {
+        pub(super) fn new(category: &'a Category, crafting: &'a Crafting) -> Self {
+            Self { category, crafting }
+        }
+
+        pub fn name(&self) -> &str {
+            &self.category.name
+        }
+
+        pub fn items(&self) -> impl Iterator<Item = ItemRef> {
+            self.crafting.items[self.category.range.clone()]
+                .iter()
+                .map(move |item| ItemRef::new(item, self.crafting))
+        }
     }
 }

@@ -86,8 +86,9 @@ pub fn process() {
     for category in items {
         crafting.add_category(category.name);
         for item in category.items {
+            let name = item.name.to_owned();
             let item = item.convert();
-            item_map.insert(item.name().to_string(), crafting.add_item(item));
+            item_map.insert(name, crafting.add_item(item));
         }
     }
 
