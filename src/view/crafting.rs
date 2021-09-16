@@ -24,8 +24,5 @@ fn view_category(category: CategoryRef) -> Node<Msg> {
 }
 
 pub fn view(crafting: &Crafting) -> Vec<Node<Msg>> {
-    crafting
-        .categories()
-        .map(|category| view_category(category))
-        .collect()
+    crafting.categories().map(view_category).collect()
 }
