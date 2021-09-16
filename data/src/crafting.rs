@@ -30,6 +30,10 @@ pub struct Recipe {
 }
 
 impl Recipe {
+    pub fn new() -> Self {
+        Self::default()
+    }
+
     pub fn add_input(&mut self, input: Ingredient) {
         self.input.push(input);
     }
@@ -81,6 +85,10 @@ pub struct Crafting {
 }
 
 impl Crafting {
+    pub fn new() -> Self {
+        Self::default()
+    }
+
     pub fn categories(&self) -> impl Iterator<Item = CategoryRef> {
         self.categories
             .iter()

@@ -55,7 +55,7 @@ struct Recipe {
 
 impl Recipe {
     fn convert(self, item_map: &ItemMap) -> output::Recipe {
-        let mut result = output::Recipe::default();
+        let mut result = output::Recipe::new();
 
         for input in self.input {
             result.add_input(input.convert(item_map));
@@ -80,7 +80,7 @@ pub fn process() {
         serde_json::from_reader(BufReader::new(file)).unwrap()
     };
 
-    let mut crafting = output::Crafting::default();
+    let mut crafting = output::Crafting::new();
     let mut item_map: HashMap<String, usize> = HashMap::new();
 
     for category in items {

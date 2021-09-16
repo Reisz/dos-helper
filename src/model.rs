@@ -9,6 +9,10 @@ pub struct Model {
 }
 
 impl Model {
+    pub fn new() -> Self {
+        Self::default()
+    }
+
     pub fn crafting(&self) -> Option<&Crafting> {
         self.crafting.as_ref()
     }
@@ -20,7 +24,7 @@ pub enum Msg {
 
 pub fn init(_: Url, orders: &mut impl Orders<Msg>) -> Model {
     orders.perform_cmd(load_data());
-    Model::default()
+    Model::new()
 }
 
 pub fn update(msg: Msg, model: &mut Model, _: &mut impl Orders<Msg>) {
