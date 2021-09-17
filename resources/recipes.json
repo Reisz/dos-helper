@@ -108,5 +108,139 @@
         "output": [
             "Physical Armour Potion"
         ]
+    },
+    {
+        "input": [
+            "Physical Armour Potion",
+            "Physical Armour Potion"
+        ],
+        "output": [
+            "Medium Physical Armour Potion"
+        ]
+    },
+    {
+        "input": [
+            "Physical Armour Potion",
+            [
+                "Augmentor",
+                "High Quality Augmentor",
+                "Ultimate Augmentor Herb"
+            ]
+        ],
+        "output": [
+            "Medium Physical Armour Potion"
+        ]
+    },
+    {
+        "input": [
+            "Medium Physical Armour Potion",
+            "Medium Physical Armour Potion"
+        ],
+        "output": [
+            "Large Physical Armour Potion"
+        ]
+    },
+    {
+        "input": [
+            "Medium Physical Armour Potion",
+            [
+                "High Quality Augmentor",
+                "Ultimate Augmentor Herb"
+            ]
+        ],
+        "output": [
+            "Large Physical Armour Potion"
+        ]
+    },
+    {
+        "input": [
+            "Large Physical Armour Potion",
+            "Large Physical Armour Potion"
+        ],
+        "output": [
+            "Huge Physical Armour Potion"
+        ]
+    },
+    {
+        "input": [
+            "Large Physical Armour Potion",
+            [
+                "High Quality Augmentor",
+                "Ultimate Augmentor Herb"
+            ]
+        ],
+        "output": [
+            "Huge Physical Armour Potion"
+        ]
+    },
+    {
+        "input": [
+            "Cutting Tool",
+            "Sharp Rock"
+        ],
+        "output": [
+            "Arrowhead",
+            "Arrowhead",
+            "Arrowhead"
+        ]
+    },
+    {
+        "input": [
+            "Cutting Tool",
+            "Sharp Piece of Metal"
+        ],
+        "output": [
+            "Arrowhead",
+            "Arrowhead",
+            "Arrowhead"
+        ]
+    },
+    {
+        "input": [
+            "Cutting Tool",
+            "Bone"
+        ],
+        "output": [
+            "Arrowhead",
+            "Arrowhead",
+            "Arrowhead",
+            "Arrowhead",
+            "Arrowhead"
+        ]
+    },
+    {
+        "input": [
+            "Cutting Tool",
+            "Log"
+        ],
+        "output": [
+            "Long Branch",
+            "Long Branch",
+            "Wood Chips"
+        ]
+    },
+    {
+        "input": [
+            "Cutting Tool",
+            "Long Branch"
+        ],
+        "output": [
+            "Short Stick",
+            "Short Stick",
+            "Wood Chips"
+        ]
+    },
+    {
+        "input": [
+            "Cutting Tool",
+            "Short Stick"
+        ],
+        "output": [
+            "Arrow Shaft",
+            "Arrow Shaft",
+            "Arrow Shaft",
+            "Arrow Shaft",
+            "Wood Chips"
+        ]
     }
 ]

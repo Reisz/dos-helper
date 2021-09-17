@@ -29,12 +29,69 @@
             {
                 "name": "Physical Armour Potion",
                 "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/minorPhysical.png"
+            },
+            {
+                "name": "Medium Physical Armour Potion",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/mediumPhysical.png"
+            },
+            {
+                "name": "Large Physical Armour Potion",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/largePhysical.png"
+            },
+            {
+                "name": "Huge Physical Armour Potion",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hugePhysical.png"
+            }
+        ]
+    },
+    {
+        "name": "Materials",
+        "items": [
+            {
+                "name": "Arrowhead",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/arrowhead.png"
+            },
+            {
+                "name": "Long Branch",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/longBranch.png"
+            },
+            {
+                "name": "Short Stick",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/shortStick.png"
+            },
+            {
+                "name": "Arrow Shaft",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/arrowshaft.png"
+            },
+            {
+                "name": "Wood Chips",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/wood_chips.jpg"
             }
         ]
     },
     {
         "name": "Ingredients",
         "items": [
+            {
+                "name": "Cutting Tool",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/knife.png"
+            },
+            {
+                "name": "Sharp Rock",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/sharpStone.png"
+            },
+            {
+                "name": "Log",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Log.png"
+            },
+            {
+                "name": "Sharp Piece of Metal",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/sharpPieceOfMetal.png"
+            },
+            {
+                "name": "Bone",
+                "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/bone.png"
+            },
             {
                 "name": "Empty Potion Bottle",
                 "image_url": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Potion_Empty.png"
