@@ -2,17 +2,30 @@ use seed::{prelude::*, *};
 
 use crate::model::Msg;
 
-use data::crafting::{CategoryRef, Crafting, ItemRef};
+use data::crafting::{CategoryRef, Crafting, ItemRef, RecipeRef};
 
 fn view_item(item: ItemRef) -> Node<Msg> {
-    img![attrs![At::Src => item.image_url()]]
+    img![C!["item"], attrs![At::Src => item.image_url()]]
+}
+
+fn view_ingredient<'a, I: Iterator<Item = ItemRef<'a>>>(items: I) -> Node<Msg> {
+    div![C!["ingredient"], items.map(view_item)]
+}
+
+fn view_recipe(recipe: RecipeRef) -> Node<Msg> {
+    div![
+        C!["recipe", "box", "notification", "is-info"],
+        div![C!["ingredients"], recipe.input().map(view_ingredient)],
+        div![C!["outputs"], recipe.output().map(view_item)]
+    ]
 }
 
 fn view_main_item(item: ItemRef) -> Node<Msg> {
-    println!("{}", item.name());
     div![
-        C!["recipe-container"],
-        div![C!["box", "recipe-box"], view_item(item)],
+        C!["recipe-container", "block"],
+        div![C!["box", "notification", "is-info"], view_item(item)],
+        div![item.recipes().map(view_recipe)],
+        div![item.usage().map(view_recipe)]
     ]
 }
 
