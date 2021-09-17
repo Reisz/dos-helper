@@ -1,5 +1,6 @@
 use std::ops::Range;
 
+use itertools::Itertools;
 use serde::{Deserialize, Serialize};
 use smallvec::SmallVec;
 
@@ -110,12 +111,12 @@ impl Crafting {
     pub fn add_recipe(&mut self, recipe: Recipe) {
         let pos = self.recipes.len();
 
-        for input in recipe.input.iter().flatten() {
+        for input in recipe.input.iter().flatten().sorted().dedup() {
             self.items[input].usage.push(pos)
         }
 
-        for output in recipe.output.iter().cloned() {
-            self.items[output].recipes.push(output);
+        for output in recipe.output.iter().cloned().sorted().dedup() {
+            self.items[output].recipes.push(pos);
         }
 
         self.recipes.push(recipe);
@@ -215,6 +216,8 @@ mod refs {
 
 #[cfg(test)]
 mod test {
+    use smallvec::smallvec;
+
     use super::*;
 
     #[test]
@@ -249,5 +252,30 @@ mod test {
         assert_eq!(item.image_url(), "Url");
         assert!(categories.next().is_none());
         assert!(items.next().is_none());
+    }
+
+    #[test]
+    fn duplicate_items_in_recipe() {
+        let mut crafting = Crafting::new();
+        crafting.add_category("Test Category".to_owned());
+        let item = crafting.add_item(Item::new("Test".to_owned(), "Url".to_owned()));
+
+        let mut recipe = Recipe::new();
+
+        recipe.add_input(Ingredient::Unique(item));
+        recipe.add_input(Ingredient::Alternatives(smallvec![item, item]));
+
+        recipe.add_output(item);
+        recipe.add_output(item);
+
+        crafting.add_recipe(recipe);
+
+        let mut categories = crafting.categories();
+        let category = categories.next().unwrap();
+        let mut items = category.items();
+        let item = items.next().unwrap();
+
+        assert_eq!(item.recipes().count(), 1);
+        assert_eq!(item.usage().count(), 1);
     }
 }
