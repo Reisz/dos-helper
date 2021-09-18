@@ -1,4 +1,3 @@
----
 - name: Potions
   items:
     - name: Minor Healing Potion
@@ -21,6 +20,89 @@
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/largePhysical.png"
     - name: Huge Physical Armour Potion
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hugePhysical.png"
+    - name: Small Magic Armour Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/minorMagical.png"
+    - name: Medium Magic Armour Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/mediumMagical.png"
+    - name: Large Magic Armour Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/largeMagical.png"
+    - name: Fire Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/fire_resistance_potion.jpg"
+    - name: Medium Fire Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/medium_fire_resistance_potion.jpg"
+    - name: Large Fire Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/large_fire_resistance_potion.jpg"
+    - name: Huge Fire Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/huge_fire_resistance_potion.jpg"
+    - name: Air Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/small_air_resistance_potion.jpg"
+    - name: Medium Air Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/medium_air_resistance_potion.jpg"
+    - name: Large Air Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/large_air_resistance_potion.jpg"
+    - name: Huge Air Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/huge_air_resistance_potion.jpg"
+    - name: Earth Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/earth_resistance_potion.jpg"
+    - name: Medium Earth Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/medium_earth_resistance_potion.jpg"
+    - name: Large Earth Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/large_earth_resistance_potion.jpg"
+    - name: Huge Earth Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/huge_earth_resistance_potion.jpg"
+    - name: Water Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/water_resistance_potion.jpg"
+    - name: Medium Water Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/medium_water_resistance_potion.jpg"
+    - name: Large Water Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/large_water_resistance_potion.jpg"
+    - name: Huge Water Resistance Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/huge_water_resistance_potion.jpg"
+    - name: Minor Resist All Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/minor_resist_all_potion.jpg"
+    - name: Medium Resist All Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/medium_resist_all_potion.jpg"
+    - name: Large Resist All Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/large_resist_all_potion.jpg"
+    - name: Invisibility Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/invisibility_potion.jpg"
+    - name: Potion of Nimble Tumble
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/potion_of_nimble_tumble.jpg"
+    - name: Potion of Strong Will
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/potion_of_strong_will.jpg"
+    - name: Stoneskin Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/stoneskin_potion.jpg"
+    - name: Potion of Jellyfish Skin
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/potion_of_jellyfish_skin.jpg"
+    - name: Attar of the Blood Rose
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/attar_of_the_blood_rose.jpg"
+    - name: Minor Strength Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/minor_strength_potion.jpg"
+    - name: Minor Intelligence Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/minor_intelligence_potion.jpg"
+    - name: Minor Finesse Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/minor_finesse_potion.jpg"
+    - name: Minor Wits Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/minor_wits_potion.jpg"
+    - name: Minor Constitution Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/minor_constitution_potion.jpg"
+    - name: Small Poison Bottle
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/minorPoison.png"
+    - name: Medium Poison Bottle
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/mediumPoison.png"
+    - name: Large Poison Bottle
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/largePoison.png"
+    - name: Huge Poison Vial
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hugePoison.png"
+    - name: Giant Poison Vial
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/giantPoison.png"
+    - name: Void-Enhanced Poison
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/void-enhanced_poison.jpg"
+    - name: Poison Elixir
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/poison_elixir.jpg"
+    - name: Fake Healing Potion
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Healing_Potion.PNG"
+
 - name: Materials
   items:
     - name: Arrowhead
@@ -33,20 +115,64 @@
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/arrowshaft.png"
     - name: Wood Chips
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/wood_chips.jpg"
+    - name: Wood Pulp
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/wood_pulp.jpg"
+    - name: Sheet of Paper
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/sheet_of_paper.jpg"
+    - name: Leather Scraps
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/leather_scraps.jpg"
+    - name: Cloth Scraps
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/cloth_scraps.jpg"
+    - name: Feather
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Feather.png"
+    - name: Yarn
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/yarn.jpg"
+    - name: Rope
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/rope.jpg"
+    - name: Fuse
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/fuse.jpg"
+    - name: Thread
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/thread.jpg"
+    - name: Bonedust
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/bonedust.jpg"
+    - name: Stardust
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/stardust_pouch.png"
+    - name: Pouch of Superior Star Dust
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/stardust_pouch.png"
+    - name: Pixie Dust
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/pixie_dust.jpg"
+    - name: Pouch of Superior Pixie Dust
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/pixie_dust.jpg"
+    - name: Broken Bottle
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/broken%20bottle.png"
+    - name: Bottle Filled with Oil
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/oil_bottle.jpg"
 - name: Ingredients
   items:
-    - name: Cutting Tool
-      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/knife.png"
     - name: Sharp Rock
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/sharpStone.png"
     - name: Log
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Log.png"
     - name: Sharp Piece of Metal
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/sharpPieceOfMetal.png"
-    - name: Bone
+    - name: Any Bone
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/bone.png"
     - name: Empty Potion Bottle
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Potion_Empty.png"
+    - name: Animal Hide
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/animal_hide.jpg"
+    - name: Wool
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/wool.png"
+    - name: Bed Linen
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/bed_linen.png"
+    - name: Pillow
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Pillow.png"
+    - name: Hair
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hair.jpg"
+    - name: Tuft of Cat Fur
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/tuft_of_cat_fur.png"
+    - name: Empty Bottle
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/empty_bottle.jpg"
     - name: Penny Bun Mushroom
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Food_Penny_Bun_Mushroom_small.png"
     - name: Augmentor
@@ -59,3 +185,69 @@
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Yarrow_Flower.PNG"
     - name: Amadouvier
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Amadouvier.PNG"
+    - name: Whisperwood
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/whisperwood.png"
+    - name: Guepinia Mushroom
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/guepiniaMushroom.png"
+    - name: Jellyroom
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/jellyroom.jpg"
+    - name: Earth Tongue Mushroom
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/earthTongue.png"
+    - name: Bluegill Mushroom
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/jellyroom.jpg"
+    - name: Trumpet of Death
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/trumpet_of_death.jpg"
+    - name: Chanterelle
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/chanterelle.jpg"
+    - name: Blood Rose
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/blood_rose.jpg"
+    - name: Amethyst Deceiver
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/amethyst.png"
+    - name: Calocera
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/calocera.jpg"
+    - name: Boletus
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/boletus.jpg"
+    - name: Puffball
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/puffball.jpg"
+    - name: Farhangite
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/farhangite.jpg"
+    - name: Fly Agaric Mushroom
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/flyAgaric.png"
+    - name: Stardust Herb
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/stardust.jpg"
+    - name: Superior Stardust Herb
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/stardust.jpg"
+    - name: Water Essence
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/water_essence.png"
+    - name: Fire Essence
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/fire_essence.png"
+    - name: Earth Essence
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/earth_essence.png"
+    - name: Air Essence
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/air_essence.png"
+    - name: Void-Touched Livewood Fragment
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Void-Touched%20Livewood%20Fragments.png"
+    - name: Red Fabric Dye
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/red_fabric_dye.jpg"
+- name: Tools
+  items:
+    - name: Cutting Tool
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/knife.png"
+    - name: Bench Saw
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/bench_saw.jpg"
+    - name: Mortar and Pestle
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/mortar_and_pestle.jpg"
+    - name: Any Hammer
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hammer.jpg"
+    - name: Spinning Wheel
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/spinning_wheel.jpg"
+    - name: Oven
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Oven.png"
+    - name: Water Source
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/waterBarrel.png"
+    - name: Oil Source
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/oilBarrel.png"
+    - name: Barrel of Ooze
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/oozeBarrel.png"
+    - name: Zaikk's Talon
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/zaikk's_talon.jpg"

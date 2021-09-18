@@ -1,53 +1,13 @@
----
 - input:
     - Empty Potion Bottle
     - Penny Bun Mushroom
   output:
     - Minor Healing Potion
-- input:
+- potion_levels:
     - Minor Healing Potion
-    - Minor Healing Potion
-  output:
     - Medium Healing Potion
-- input:
-    - Minor Healing Potion
-    - - Augmentor
-      - High Quality Augmentor
-      - Ultimate Augmentor Herb
-  output:
-    - Medium Healing Potion
-- input:
-    - Medium Healing Potion
-    - Medium Healing Potion
-  output:
     - Healing Potion
-- input:
-    - Medium Healing Potion
-    - - Augmentor
-      - High Quality Augmentor
-      - Ultimate Augmentor Herb
-  output:
-    - Healing Potion
-- input:
-    - Healing Potion
-    - Healing Potion
-  output:
     - Huge Healing Potion
-- input:
-    - Healing Potion
-    - - High Quality Augmentor
-      - Ultimate Augmentor Herb
-  output:
-    - Giant Healing Potion
-- input:
-    - Huge Healing Potion
-    - Huge Healing Potion
-  output:
-    - Huge Healing Potion
-- input:
-    - Huge Healing Potion
-    - Ultimate Augmentor Herb
-  output:
     - Giant Healing Potion
 - input:
     - Empty Potion Bottle
@@ -59,40 +19,13 @@
     - Amadouvier
   output:
     - Physical Armour Potion
-- input:
+- potion_levels:
     - Physical Armour Potion
-    - Physical Armour Potion
-  output:
     - Medium Physical Armour Potion
-- input:
-    - Physical Armour Potion
-    - - Augmentor
-      - High Quality Augmentor
-      - Ultimate Augmentor Herb
-  output:
-    - Medium Physical Armour Potion
-- input:
-    - Medium Physical Armour Potion
-    - Medium Physical Armour Potion
-  output:
     - Large Physical Armour Potion
-- input:
-    - Medium Physical Armour Potion
-    - - High Quality Augmentor
-      - Ultimate Augmentor Herb
-  output:
-    - Large Physical Armour Potion
-- input:
-    - Large Physical Armour Potion
-    - Large Physical Armour Potion
-  output:
     - Huge Physical Armour Potion
-- input:
-    - Large Physical Armour Potion
-    - - High Quality Augmentor
-      - Ultimate Augmentor Herb
-  output:
-    - Huge Physical Armour Potion
+  hq_augmentors: 2
+  ult_augmentors: 0
 - input:
     - Cutting Tool
     - Sharp Rock
@@ -109,7 +42,7 @@
     - Arrowhead
 - input:
     - Cutting Tool
-    - Bone
+    - Any Bone
   output:
     - Arrowhead
     - Arrowhead
@@ -117,21 +50,21 @@
     - Arrowhead
     - Arrowhead
 - input:
-    - Cutting Tool
+    - [Cutting Tool, Bench Saw]
     - Log
   output:
     - Long Branch
     - Long Branch
     - Wood Chips
 - input:
-    - Cutting Tool
+    - [Cutting Tool, Bench Saw]
     - Long Branch
   output:
     - Short Stick
     - Short Stick
     - Wood Chips
 - input:
-    - Cutting Tool
+    - [Cutting Tool, Bench Saw]
     - Short Stick
   output:
     - Arrow Shaft
@@ -139,3 +72,265 @@
     - Arrow Shaft
     - Arrow Shaft
     - Wood Chips
+- input:
+    - Any Bone
+    - Cutting Tool
+  output:
+    - Bonedust
+- input:
+    - Stardust Herb
+    - Mortar and Pestle
+  output:
+    - Stardust
+- input:
+    - Superior Stardust Herb
+    - Mortar and Pestle
+  output:
+    - Pouch of Superior Star Dust
+- input:
+    - Bonedust
+    - Stardust
+  output:
+    - Pixie Dust
+- input:
+    - Bonedust
+    - Pouch of Superior Star Dust
+  output:
+    - Pouch of Superior Pixie Dust
+- input:
+    - Empty Bottle
+    - Any Hammer
+  output:
+    - Broken Bottle
+- input:
+    - [Hair, Tuft of Cat Fur]
+    - Spinning Wheel
+  output:
+    - Thread
+- input:
+    - [Hair, Tuft of Cat Fur]
+    - [Hair, Tuft of Cat Fur]
+  output:
+    - Thread
+- input:
+    - Wood Chips
+    - Water Source
+  output:
+    - Wood Pulp
+- input:
+    - Oven
+    - Wood Pulp
+  output:
+    - Sheet of Paper
+- input:
+    - Pillow
+    - Cutting Tool
+  output:
+    - Feather
+- input:
+    - Bed Linen
+    - Cutting Tool
+  output:
+    - Cloth Scraps
+- input:
+    - Animal Hide
+    - Cutting Tool
+  output:
+    - Leather Scraps
+- input:
+    - Wool
+    - Wool
+  output:
+    - Yarn
+- input:
+    - Yarn
+    - Yarn
+  output:
+    - Rope
+- input:
+    - Rope
+    - Rope
+  output:
+    - Fuse
+- input:
+    - Empty Bottle
+    - Oil Source
+  output:
+    - Bottle Filled with Oil
+- input:
+    - Healing Elixir
+    - Zaikk's Talon
+  output:
+    - Poison Elixir
+- input:
+    - Empty Potion Bottle
+    - [Fly Agaric Mushroom, Barrel of Ooze]
+  output:
+    - Small Poison Bottle
+- input:
+    - Minor Healing Potion
+    - Zaikk's Talon
+  output:
+    - Small Poison Bottle
+- input:
+    - Medium Healing Potion
+    - Zaikk's Talon
+  output:
+    - Medium Poison Bottle
+- input:
+    - Healing Potion
+    - Zaikk's Talon
+  output:
+    - Large Poison Bottle
+- input:
+    - Huge Healing Potion
+    - Zaikk's Talon
+  output:
+    - Huge Poison Vial
+- input:
+    - Giant Healing Potion
+    - Zaikk's Talon
+  output:
+    - Giant Poison Vial
+- potion_levels:
+    - Small Poison Bottle
+    - Medium Poison Bottle
+    - Large Poison Bottle
+    - Huge Poison Vial
+- input:
+    - Small Poison Bottle
+    - Void-Touched Livewood Fragment
+  output:
+    - Void-Enhanced Poison
+- input:
+    - - Small Poison Bottle
+      - Medium Poison Bottle
+      - Large Poison Bottle
+    - Red Fabric Dye
+  output:
+    - Fake Healing Potion
+- input:
+    - - Huge Poison Vial
+      - Giant Poison Vial
+    - Red Fabric Dye
+  output:
+    - Fake Healing Potion
+- input:
+    - Empty Potion Bottle
+    - Whisperwood
+  output:
+    - Small Magic Armour Potion
+- potion_levels:
+    - Small Magic Armour Potion
+    - Medium Magic Armour Potion
+    - Large Magic Armour Potion
+  hq_augmentors: 1
+  ult_augmentors: 0
+- input:
+    - Empty Potion Bottle
+    - Guepinia Mushroom
+  output:
+    - Fire Resistance Potion
+- potion_levels:
+    - Fire Resistance Potion
+    - Medium Fire Resistance Potion
+    - Large Fire Resistance Potion
+    - Huge Fire Resistance Potion
+  hq_augmentors: 2
+- input:
+    - Empty Potion Bottle
+    - Jellyroom
+  output:
+    - Air Resistance Potion
+- potion_levels:
+    - Air Resistance Potion
+    - Medium Air Resistance Potion
+    - Large Air Resistance Potion
+    - Huge Air Resistance Potion
+  hq_augmentors: 2
+- input:
+    - Empty Potion Bottle
+    - Earth Tongue Mushroom
+  output:
+    - Earth Resistance Potion
+- potion_levels:
+    - Earth Resistance Potion
+    - Medium Earth Resistance Potion
+    - Large Earth Resistance Potion
+    - Huge Earth Resistance Potion
+  hq_augmentors: 2
+- input:
+    - Empty Potion Bottle
+    - Bluegill Mushroom
+  output:
+    - Water Resistance Potion
+- potion_levels:
+    - Water Resistance Potion
+    - Medium Water Resistance Potion
+    - Large Water Resistance Potion
+    - Huge Water Resistance Potion
+  hq_augmentors: 2
+- input:
+    - Empty Potion Bottle
+    - Trumpet of Death
+  output:
+    - Minor Resist All Potion
+- potion_levels:
+    - Minor Resist All Potion
+    - Medium Resist All Potion
+    - Large Resist All Potion
+- input:
+    - Empty Potion Bottle
+    - Chanterelle
+  output:
+    - Invisibility Potion
+- input:
+    - Empty Potion Bottle
+    - Water Essence
+  output:
+    - Potion of Nimble Tumble
+- input:
+    - Empty Potion Bottle
+    - Fire Essence
+  output:
+    - Potion of Strong Will
+- input:
+    - Empty Potion Bottle
+    - Earth Essence
+  output:
+    - Stoneskin Potion
+- input:
+    - Empty Potion Bottle
+    - Air Essence
+  output:
+    - Potion of Jellyfish Skin
+- input:
+    - Empty Potion Bottle
+    - Blood Rose
+  output:
+    - Attar of the Blood Rose
+- input:
+    - Empty Potion Bottle
+    - Amethyst Deceiver
+  output:
+    - Minor Strength Potion
+- input:
+    - Empty Potion Bottle
+    - Calocera
+  output:
+    - Minor Intelligence Potion
+- input:
+    - Empty Potion Bottle
+    - Boletus
+  output:
+    - Minor Finesse Potion
+- input:
+    - Empty Potion Bottle
+    - Puffball
+  output:
+    - Minor Wits Potion
+- input:
+    - Empty Potion Bottle
+    - Farhangite
+  output:
+    - Minor Constitution Potion
