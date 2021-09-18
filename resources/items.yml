@@ -102,7 +102,36 @@
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/poison_elixir.jpg"
     - name: Fake Healing Potion
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Healing_Potion.PNG"
-
+- name: Arrowheads
+  items:
+    - name: Water Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/waterArrowhead.png"
+    - name: Fire Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/fireArrowhead.png"
+    - name: Poisoned Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/poisonedArrowhead.png"
+    - name: Shocking Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/shockingArrowhead.png"
+    - name: Blessed Water Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/blessedWaterArrowhead.png"
+    - name: Explosive Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/explosiveArrowhead.png"
+    - name: Poisoncloud Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/poisoncloudArrowhead.png"
+    - name: Static Cloud Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/staticCloudArrowhead.png"
+    - name: Steamcloud Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/steamCloudArrowhead.png"
+    - name: Slowdown Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/slowdownArrowhead.png"
+    - name: Knockdown Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/knockdownArrowhead.png"
+    - name: Freezing Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/freezingArrowhead.png"
+    - name: Cursed Fire Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/cursed_fire_arrowhead.png"
+    - name: Charming Arrowhead
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/charmingArrowhead.png"
 - name: Materials
   items:
     - name: Arrowhead
@@ -229,6 +258,14 @@
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Void-Touched%20Livewood%20Fragments.png"
     - name: Red Fabric Dye
       image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/red_fabric_dye.jpg"
+    - name: Honey
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/honey.png"
+    - name: Source Orb
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Source_orb.png"
+    - name: Antler
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/Antlers.png"
+    - name: Tooth
+      image_url: "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/tooth.png"
 - name: Tools
   items:
     - name: Cutting Tool

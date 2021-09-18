@@ -334,3 +334,78 @@
     - Farhangite
   output:
     - Minor Constitution Potion
+- input:
+    - Water Arrowhead
+    - Source Orb
+  output:
+    - Blessed Water Arrowhead
+- input:
+    - Arrowhead
+    - Honey
+  output:
+    - Charming Arrowhead
+- input:
+    - Fire Arrowhead
+    - Source Orb
+  output:
+    - Cursed Fire Arrowhead
+- input:
+    - Fire Arrowhead
+    - Oil Source
+  output:
+    - Explosive Arrowhead
+- input:
+    - Arrowhead
+    - Fire Essence
+  output:
+    - Fire Arrowhead
+- input:
+    - Arrowhead
+    - Water Essence
+  output:
+    - Freezing Arrowhead
+- input:
+    - Antler
+    - Cutting Tool
+  output:
+    - Knockdown Arrowhead
+- input:
+    - Arrowhead
+    - Barrel of Ooze
+  output:
+    - Poisoned Arrowhead
+- input:
+    - Arrowhead
+    - Earth Essence
+  output:
+    - Poisoncloud Arrowhead
+- input:
+    - Arrowhead
+    - Air Essence
+  output:
+    - Shocking Arrowhead
+- input:
+    - Tooth
+    - Cutting Tool
+  output:
+    - Shocking Arrowhead
+- input:
+    - Arrowhead
+    - Oil Source
+  output:
+    - Slowdown Arrowhead
+- input:
+    - Shocking Arrowhead
+    - Water Source
+  output:
+    - Static Cloud Arrowhead
+- input:
+    - Fire Arrowhead
+    - Water Source
+  output:
+    - Steamcloud Arrowhead
+- input:
+    - Arrowhead
+    - Water Source
+  output:
+    - Water Arrowhead

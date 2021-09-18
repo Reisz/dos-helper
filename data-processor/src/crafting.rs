@@ -35,7 +35,7 @@ enum Ingredient {
 impl Ingredient {
     fn convert(self, item_map: &ItemMap) -> output::Ingredient {
         match self {
-            Self::Unique(name) => output::Ingredient::Unique(*item_map.get(&name).unwrap()),
+            Self::Unique(name) => output::Ingredient::Unique(*item_map.get(&name).expect(&name)),
             Self::Alternatives(alts) => output::Ingredient::Alternatives(
                 alts.iter()
                     .map(|name| *item_map.get(name).unwrap())
