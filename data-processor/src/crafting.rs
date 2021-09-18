@@ -71,13 +71,13 @@ impl Recipe {
 
 pub fn process() {
     let items: Items = {
-        let file = File::open("resources/items.json").unwrap();
-        serde_json::from_reader(BufReader::new(file)).unwrap()
+        let file = File::open("resources/items.yml").unwrap();
+        serde_yaml::from_reader(BufReader::new(file)).unwrap()
     };
 
     let recipes: Recipes = {
-        let file = File::open("resources/recipes.json").unwrap();
-        serde_json::from_reader(BufReader::new(file)).unwrap()
+        let file = File::open("resources/recipes.yml").unwrap();
+        serde_yaml::from_reader(BufReader::new(file)).unwrap()
     };
 
     let mut crafting = output::Crafting::new();
