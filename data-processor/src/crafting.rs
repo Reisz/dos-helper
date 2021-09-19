@@ -108,10 +108,10 @@ impl Recipe {
 
         recipes.push(Self::build_recipe(
             vec![
-                Ingredient::Unique(input.clone()),
+                Ingredient::Unique(input),
                 Ingredient::Alternatives(augmentors),
             ],
-            vec![output.clone()],
+            vec![output],
             item_map,
         ));
     }
