@@ -3,7 +3,7 @@ name: Deployment
 on:
   push:
     branches:
-    - main
+      - main
 
 env:
   CARGO_TERM_COLOR: always
@@ -12,33 +12,29 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout sources
-      uses: actions/checkout@v2
+      - name: Checkout sources
+        uses: actions/checkout@v2
 
-    - name: Install rust toolchain
-      uses: actions-rs/toolchain@v1
-      with:
-        target: wasm32-unknown-unknown
-        toolchain: stable
-        profile: minimal
+      - name: Install rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          target: wasm32-unknown-unknown
+          toolchain: stable
+          profile: minimal
 
-    - name: Install trunk
-      uses: actions-rs/cargo@v1 # TODO: Replace with jetli/trunk-action@v0.1.0 once 0.14 is released
-      with:
-        command: install
-        # Debug is faster to install with no noticeable runtime speed decrease
-        args: --debug --locked --git https://github.com/thedodd/trunk.git trunk
+      - name: Install trunk
+        uses: jetli/trunk-action@v0.1.0
 
-    - name: Build
-      run: |
-        trunk build --release
-        touch dist/.nojekyll
+      - name: Build
+        run: |
+          trunk build --release
+          touch dist/.nojekyll
 
-    - name: Publish
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v2
-      with:
-        target_branch: gh-pages
-        build_dir: dist
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
