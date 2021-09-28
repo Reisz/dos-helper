@@ -37,7 +37,7 @@ pub fn update(msg: Msg, model: &mut Model, _: &mut impl Orders<Msg>) {
 }
 
 async fn load_data() -> Msg {
-    let request = Request::new("/data.bin.xz").cache(web_sys::RequestCache::NoCache);
+    let request = Request::new("data.bin.xz").cache(web_sys::RequestCache::NoCache);
     let response = request.fetch().await.unwrap();
     let bytes = response.bytes().await.unwrap();
 

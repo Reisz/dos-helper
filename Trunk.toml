@@ -1,6 +1,3 @@
-[build]
-public_url = "./"
-
 [[hooks]]
 stage = "pre_build"
 command = "cargo"
